@@ -11,7 +11,7 @@ app.use(cors({
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
-
+ const data={name:"vinay",phone:"979849",age:"78"}
 const mysqlConnection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -45,7 +45,8 @@ app.post('/send', (req, res) => {
 
 app.listen(port, () => {
   console.log('Server started on port ' + port);
-});
+}); 
+app.get('/', (req, res) => {res.send(data)})
 app.get('/login', (req, res) => {
   const { email, password } = req.query;
 
