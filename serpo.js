@@ -9,7 +9,7 @@ app.use(express.json());
 // Allow requests only from your GitHub Pages domain
 app.use(
   cors({
-    origin: ["https://vinaypittala.github.io", "http://localhost:3000"],
+    origin: ["https://pittalavinay.github.io", "http://localhost:3000"],
   })
 );
 
