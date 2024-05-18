@@ -15,7 +15,7 @@ app.use(
 
 const data = { name: "vinay", phone: "979849", age: "78" };
 
-// Initialize knex with PostgreSQL connection
+// Initialize knex with PostgreSQL connection jkfjf
 const db = knex({
   client: "pg",
   connection: {
